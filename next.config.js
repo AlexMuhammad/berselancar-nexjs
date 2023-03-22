@@ -4,7 +4,10 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     appDir: true
-  }
+  },
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
 }
 
 module.exports = nextConfig

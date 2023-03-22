@@ -11,10 +11,10 @@ export default function Cari() {
   };
   return (
     <div>
-      <form onSubmit={onSearchHandler}>
-        <input type="text" placeholder="Cari github..." />
-        <button>Cari</button>
-        {"Mencari: " + query}
+      <form onSubmit={onSearchHandler} className="flex w-full space-x-3 mt-10">
+        <input type="text" placeholder="Cari github..." className="w-full border-zinc-400 border rounded-md px-3" />
+        <button className="bg-blue-600 px-4 py-1 rounded-md text-white">Cari</button>
+        {/* {"Mencari: " + query} */}
       </form>
       {query && <SectionResult query={query} />}
     </div>
